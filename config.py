@@ -1,0 +1,4 @@
+BOT_TOKEN = "6846154296:AAFncOe3eDE_u0qu8Ucx4V7jwSKmR-8uI8U"
+DB_CACHE_PATH = './cache.pickle'
+DB_SAVE_ITER = 10
+DB_LOGGING = True
