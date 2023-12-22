@@ -35,6 +35,9 @@ class RecipyManager:
                   f"Loaded {len(self._data)} recipies")
 
     def find_nearest(self, name: str) -> List[str]:
+        mb_ingredients = [i for i in self._data if name in i]
+        if mb_ingredients:
+            return mb_ingredients
         return difflib.get_close_matches(name, self._data)
 
     def parse_web(self, ingredients: List[str], page=2):
